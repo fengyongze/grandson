@@ -9,10 +9,10 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.scss$/,
-            loader: ["style", "css", "sass"]
+            loader: 'style!css!sass?sourceMap'
         }, {
             test: /\.(png|jpg|gif)$/,
-            loader: "url-loader?limit=8192"
+            loader: 'url-loader?limit=100000'
         }]
     }
 }
